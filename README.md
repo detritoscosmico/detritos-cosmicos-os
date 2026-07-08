@@ -1,23 +1,16 @@
 # Detritos Cósmicos OS
 
-## Objetivo
+## Visão do projeto
 
-Criar uma base visual e técnica para um sistema experimental inspirado em Linux, automação, produtividade, limpeza segura, terminal com IA e interface futurista.
+O **Detritos Cósmicos OS** é um laboratório visual e técnico para estudar interfaces futuristas, automação pessoal, produtividade, terminal com IA, limpeza segura e organização de sistema.
+
+O projeto deve evoluir como protótipo seguro, documentado e reversível. Nada aqui deve ser usado para ocultação maliciosa, coleta de dados sem consentimento, persistência escondida ou comandos destrutivos automáticos.
 
 ## Status
 
-Projeto em fase de documentação e protótipo.
+Projeto em fase de documentação, prototipagem e definição de módulos.
 
-## Regra de segurança
-
-Este repositório deve priorizar ferramentas seguras, reversíveis e documentadas.
-
-Nada de apagar arquivos sensíveis sem confirmação explícita.
-Nada de código destrutivo.
-Nada de ocultação maliciosa.
-Nada de automação que prejudique terceiros.
-
-## Módulos do projeto
+## Módulos planejados
 
 - Terminal Dimensional
 - Painel Detritos Cósmicos
@@ -27,12 +20,13 @@ Nada de automação que prejudique terceiros.
 - Scripts de limpeza reversível
 - Integração futura com Telegram
 
-## Estrutura recomendada
+## Estrutura profissional recomendada
 
 ```text
 detritos-cosmicos-os/
 ├── README.md
 ├── docs/
+│   ├── ESTRUTURA.md
 │   ├── ROADMAP.md
 │   ├── SEGURANCA.md
 │   └── MODULOS.md
@@ -45,14 +39,26 @@ detritos-cosmicos-os/
 
 ## Próxima versão mínima
 
-Criar um protótipo visual em HTML/CSS com:
+Criar um protótipo visual em HTML/CSS/JS com:
 
 - tela inicial
-- terminal falso
+- terminal simulado
 - cards de módulos
 - área da Suzy
-- botão de limpeza simulada
+- botão de limpeza apenas simulada
+
+## Documentação
+
+- [`docs/ESTRUTURA.md`](docs/ESTRUTURA.md) — organização recomendada.
+- [`docs/ROADMAP.md`](docs/ROADMAP.md) — plano de evolução.
+- [`docs/SEGURANCA.md`](docs/SEGURANCA.md) — limites e regras do projeto.
+
+## Regra central
+
+Primeiro segurança. Depois automação. Depois estética.
 
 ## Progresso
 
+```text
 [██░░░░░░░░] 20%
+```
