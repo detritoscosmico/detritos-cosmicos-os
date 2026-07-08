@@ -17,6 +17,10 @@ jobs:
       - name: Verificar protótipo seguro
         run: |
           test -f prototipos/painel-html/index.html
+          test -f prototipos/painel-html/style.css
+          test -f prototipos/painel-html/app.js
           grep -q "Modo Seguro" prototipos/painel-html/index.html
           grep -q "nenhum arquivo" prototipos/painel-html/index.html
           grep -q "PurgeX" prototipos/painel-html/index.html
+          grep -q "style.css" prototipos/painel-html/index.html
+          grep -q "app.js" prototipos/painel-html/index.html
