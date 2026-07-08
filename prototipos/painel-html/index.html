@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detritos Cósmicos OS — Protótipo</title>
+  <style>
+    body{margin:0;background:#05050a;color:#f2f2f2;font-family:Arial,Helvetica,sans-serif}
+    header{padding:24px;border-bottom:1px solid #333;background:#0b0b14}
+    h1{margin:0;color:#9d7cff;letter-spacing:2px;text-transform:uppercase}
+    main{padding:28px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
+    .card{background:#10101c;border:1px solid #2a2a40;border-radius:18px;padding:22px;box-shadow:0 0 30px rgba(157,124,255,.12)}
+    .terminal{min-height:280px;background:#000;border-radius:14px;padding:18px;color:#81ffbd;font-family:monospace}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .module{padding:16px;border:1px solid #333;border-radius:14px;background:#151526}
+    button{background:#9d7cff;color:#08080d;border:0;padding:12px 18px;border-radius:999px;font-weight:700;cursor:pointer}
+    @media(max-width:850px){main{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Detritos Cósmicos OS</h1>
+    <p>Protótipo visual seguro — sem comandos destrutivos.</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Terminal Dimensional</h2>
+      <div class="terminal">
+        <p>&gt; sistema iniciado</p>
+        <p>&gt; Suzy online</p>
+        <p>&gt; PurgeX em modo simulação</p>
+        <p>&gt; aguardando comando seguro...</p>
+      </div>
+    </section>
+    <aside class="card">
+      <h2>Módulos</h2>
+      <div class="grid">
+        <div class="module">Suzy IA</div>
+        <div class="module">PurgeX Seguro</div>
+        <div class="module">Modo Eclipse</div>
+        <div class="module">Logs Locais</div>
+      </div>
+      <p></p>
+      <button onclick="alert('Simulação concluída. Nenhum arquivo foi alterado.')">Simular limpeza</button>
+    </aside>
+  </main>
+</body>
+</html>
