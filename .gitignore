@@ -1,0 +1,31 @@
+# Ambiente local
+.env
+.env.local
+*.local
+
+# Logs
+*.log
+logs/
+
+# Arquivos temporários
+tmp/
+temp/
+cache/
+
+# Dependências futuras
+node_modules/
+venv/
+__pycache__/
+*.pyc
+
+# Builds
+/dist/
+/build/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# VS Code local
+.vscode/
+!.vscode/extensions.json
