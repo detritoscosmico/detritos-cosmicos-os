@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Detritos Cósmicos OS — Protótipo Seguro</title>
-  <style>
-    :root{--bg:#05050a;--panel:#10101c;--panel-2:#151526;--line:#2a2a40;--text:#f2f2f2;--muted:#b8b8c8;--accent:#9d7cff;--green:#81ffbd;--danger:#ff6b6b}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#151526,var(--bg));color:var(--text);font-family:Arial,Helvetica,sans-serif}.topbar{padding:24px;border-bottom:1px solid var(--line);background:rgba(11,11,20,.92);display:flex;justify-content:space-between;gap:20px;align-items:center}.eyebrow{color:var(--green);text-transform:uppercase;letter-spacing:.16em;font-weight:900;font-size:.78rem}h1{margin:4px 0 0;color:var(--accent);letter-spacing:2px;text-transform:uppercase}.layout{padding:28px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px}.panel,.card,.suzy-box{background:rgba(16,16,28,.9);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 0 30px rgba(157,124,255,.12)}.terminal-log{min-height:290px;background:#000;border-radius:14px;padding:18px;color:var(--green);font-family:monospace;overflow:auto}.terminal-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{background:var(--panel-2)}.card p,.suzy-box p{color:var(--muted);line-height:1.5}button{background:var(--accent);color:#08080d;border:0;padding:12px 18px;border-radius:999px;font-weight:900;cursor:pointer}.safe{color:var(--green)}.warning{color:var(--danger)}.suzy-box{margin:0 28px 28px}@media(max-width:850px){.topbar,.layout{grid-template-columns:1fr;display:grid}.grid{grid-template-columns:1fr}}
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="topbar">
@@ -50,36 +48,6 @@
     <p id="suzyText">Primeiro segurança. Depois automação. Depois estética.</p>
   </section>
 
-  <script>
-    const terminalLog = document.getElementById('terminalLog');
-    const suzyText = document.getElementById('suzyText');
-
-    const messages = {
-      diagnostico: {
-        log: '&gt; diagnóstico simulado: interface OK, módulos visuais OK, risco zero',
-        suzy: 'Diagnóstico visual concluído. Nenhum arquivo foi lido, movido ou apagado.'
-      },
-      purgex: {
-        log: '&gt; PurgeX simulado: pré-visualização criada, nenhuma limpeza real executada',
-        suzy: 'PurgeX está em modo simulação. A versão real só deve existir com pré-visualização, confirmação e logs.'
-      },
-      suzy: {
-        log: '&gt; Suzy: regra operacional carregada com sucesso',
-        suzy: 'Eu só recomendo automação segura, reversível e explicada antes da execução.'
-      }
-    };
-
-    document.querySelectorAll('[data-command]').forEach((button) => {
-      button.addEventListener('click', () => {
-        const command = button.dataset.command;
-        const message = messages[command];
-        if (!message) return;
-
-        terminalLog.insertAdjacentHTML('beforeend', `<p>${message.log}</p>`);
-        suzyText.textContent = message.suzy;
-        terminalLog.scrollTop = terminalLog.scrollHeight;
-      });
-    });
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>
