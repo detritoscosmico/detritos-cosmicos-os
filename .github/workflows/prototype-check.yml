@@ -1,0 +1,22 @@
+name: Verificação do protótipo
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Verificar protótipo seguro
+        run: |
+          test -f prototipos/painel-html/index.html
+          grep -q "Modo Seguro" prototipos/painel-html/index.html
+          grep -q "nenhum arquivo" prototipos/painel-html/index.html
+          grep -q "PurgeX" prototipos/painel-html/index.html
